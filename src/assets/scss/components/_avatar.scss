@@ -1,0 +1,28 @@
+@import "../utils/variables";
+
+.avatar {
+  height: 30px;
+  max-width: 30px;
+  min-width: 30px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: #2B6E7C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+
+  &--review {
+    img {
+      border-radius: 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  span {
+    font-family: $font-family-Roboto;
+    font-weight: $bold;
+    font-size: $font-size-button;
+  }
+}

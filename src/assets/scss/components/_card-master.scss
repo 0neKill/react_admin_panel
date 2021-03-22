@@ -1,0 +1,103 @@
+@import "../utils/variables";
+
+.card-master {
+  max-width: 212px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #3C4255;
+  padding: 10px;
+  margin-bottom: 10px;
+
+
+  &--title {
+    font-family: $font-family-Roboto;
+    font-weight: $bold;
+    font-size: 16px;
+    color: $color_write;
+  }
+
+  &__btn-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &--modal {
+    &__profile {
+      max-width: 100%;
+    }
+
+    $modal: '.card-master--modal';
+
+    &__img {
+      display: block;
+      max-width: 200px;
+      margin: 0 auto 20px;
+      border-radius: 20px;
+    }
+
+    &__name {
+      font-family: $font-family-Standard;
+      font-weight: $regular;
+      font-size: 20px;
+      color: #000000;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &__title {
+      display: block;
+      font-family: $font-family-Roboto;
+      font-weight: $bold;
+      padding: 10px 0;
+    }
+
+    &__teg {
+      text-align: center;
+
+      #{$modal}__select {
+        display: block;
+      }
+    }
+
+    &__icon {
+      border-radius: 10px;
+    }
+
+    &__select {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--create {
+
+
+    &__name {
+      display: block;
+      font-family: $font-family-Roboto;
+      font-weight: $bold;
+      margin-bottom: 10px;
+    }
+
+    &__about {
+      display: block;
+      font-family: $font-family-Roboto;
+      font-weight: $bold;
+      padding: 10px 0;
+    }
+
+    &__btn {
+      margin: 20px 0 10px;
+    }
+
+    &__title {
+      display: block;
+      font-family: $font-family-Roboto;
+      font-weight: $bold;
+      padding: 10px 0;
+    }
+  }
+}

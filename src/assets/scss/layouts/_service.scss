@@ -1,0 +1,47 @@
+@import '../utils/variables';
+
+.service {
+  &__title {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+  &__price {
+    width: 20%;
+    margin-right: 20px;
+  }
+
+  &__text {
+    margin-right: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    button {
+      display: block;
+      margin-left: 20px;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__pagination {
+    margin-top: 20px;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+
+}

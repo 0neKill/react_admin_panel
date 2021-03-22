@@ -1,0 +1,190 @@
+@import '~antd/dist/antd.compact.min.css';
+@import './variables';
+
+//Loader
+.lds-ripple {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 100px auto;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #000000;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+//hamburger
+.hamburger {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  margin-left: 20px;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity, filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.hamburger.is-active:hover, .hamburger:hover {
+  opacity: .7
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+  background-color: #ffffff;
+}
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px
+}
+
+.hamburger-inner {
+  top: 50%;
+  display: block;
+  margin-top: -2px
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.hamburger-inner:after, .hamburger-inner:before {
+  display: block;
+  content: ""
+}
+
+.hamburger-inner:before {
+  top: -10px
+}
+
+.hamburger-inner:after {
+  bottom: -10px
+}
+
+.hamburger--emphatic {
+  overflow: hidden
+}
+
+.hamburger--emphatic .hamburger-inner {
+  transition: background-color .125s ease-in .175s
+}
+
+.hamburger--emphatic .hamburger-inner:before {
+  left: 0;
+  transition: transform .125s cubic-bezier(.6, .04, .98, .335), top .05s linear .125s, left .125s ease-in .175s
+}
+
+.hamburger--emphatic .hamburger-inner:after {
+  top: 10px;
+  right: 0;
+  transition: transform .125s cubic-bezier(.6, .04, .98, .335), top .05s linear .125s, right .125s ease-in .175s
+}
+
+.hamburger--emphatic.is-active .hamburger-inner {
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  background-color: transparent !important
+}
+
+.hamburger--emphatic.is-active .hamburger-inner:before {
+  top: -80px;
+  left: -80px;
+  transition: left .125s ease-out, top .05s linear .125s, transform .125s cubic-bezier(.075, .82, .165, 1) .175s;
+  transform: translate3d(80px, 80px, 0) rotate(45deg)
+}
+
+.hamburger--emphatic.is-active .hamburger-inner:after {
+  top: -80px;
+  right: -80px;
+  transition: right .125s ease-out, top .05s linear .125s, transform .125s cubic-bezier(.075, .82, .165, 1) .175s;
+  transform: translate3d(-80px, 80px, 0) rotate(-45deg)
+}
+
+//ant
+.card__confirm {
+  border-radius: 5px;
+  font-weight: $light;
+  font-family: $font-family-Roboto;
+  font-size: $font-size-button;
+}
+
+.ant-modal-title {
+  font-size: 20px;
+  font-weight: $bold;
+}
+
+.ant-empty {
+  background-color: $color_write;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+
+  &-description {
+    font-size: 20px;
+    font-family: $font-family-Roboto;
+    font-weight: $bold;
+  }
+}
+.gallery{
+  .ant-upload-list-picture-card-container {
+    width: 212px;
+    height: 170px;
+    margin-right: 40px;
+  }
+
+  .ant-upload {
+    min-width: 212px;
+    min-height: 170px;
+  }
+}
+
+.pagination{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ant-pagination{
+  padding-bottom: 60px;
+}
+

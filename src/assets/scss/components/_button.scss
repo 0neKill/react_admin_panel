@@ -1,0 +1,21 @@
+@import '../utils/variables';
+
+.button {
+  font-family: $font-family-Roboto;
+  font-weight: $light;
+  font-size: $font-size-button;
+  color: $color_write;
+  border-radius: 5px;
+
+  &-main {
+    display: block;
+    max-width: 212px;
+    width: 100%;
+    height: 30px;
+    font-family: $font-family-Standard;
+    font-weight: $bold;
+    font-size: $font-size-general;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+}

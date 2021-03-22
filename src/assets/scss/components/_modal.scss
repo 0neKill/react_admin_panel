@@ -1,0 +1,59 @@
+@import "../utils/variables";
+
+.modal {
+  font-family: $font-family-Standard;
+  text-align: center;
+  $modal: &;
+
+
+  &__content {
+    text-align: start;
+    font-family: $font-family-Roboto;
+
+    #{$modal}__info {
+      font-family: $font-family-Roboto;
+      text-align: center;
+      border-bottom: 1px solid #bab8b8;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+
+      p {
+        font-family: $font-family-Roboto;
+        font-weight: $bold;
+        font-size: 16px;
+        display: block;
+      }
+
+      h2 {
+        font-family: $font-family-Roboto;
+        color: #27525b;
+        font-weight: $bold;
+        font-size: 20px;
+        line-height: 1.3;
+
+        span {
+          font-family: $font-family-Roboto;
+          font-weight: $regular;
+          color: #4c4b4b;
+        }
+      }
+    }
+
+    #{$modal}__record--title {
+      display: block;
+      font-family: $font-family-Roboto;
+      font-weight: $bold;
+      padding: 10px 0;
+    }
+
+    .attachment--profile {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 10px;
+
+      span {
+        font-weight: $bold;
+      }
+    }
+  }
+}

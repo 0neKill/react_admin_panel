@@ -1,0 +1,3 @@
+export enum AUTH {
+    SET_AUTHORIZATION = "SET_AUTHORIZATION",
+}

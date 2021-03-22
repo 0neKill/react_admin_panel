@@ -1,0 +1,70 @@
+@import '../utils/variables';
+
+.card {
+  display: flex;
+  width: 100%;
+  min-height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E6E9EA;
+  border-radius: 5px;
+  box-shadow: 3px 4px 7px #B9B9B9;
+  margin-bottom: 10px;
+  $card: &;
+
+
+  &-success {
+    background-color: #BEDCC8;
+
+    .avatar {
+      background-color: #218C45;
+    }
+  }
+
+  &-attachment {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    font-family: $font-family-Roboto;
+    font-weight: $bold;
+    color: #000000;
+
+    &__item {
+      margin-left: 20px;
+      font-size: $font-size-button;
+    }
+
+    &--name {
+      min-width: 80px;
+    }
+
+    &--telephone {
+      min-width: 160px;
+    }
+
+    &--date {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+
+
+  &__button-list {
+    display: flex;
+    padding: 0 18px;
+    max-width: 338px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &-review {
+    #{$card}__button-list {
+      max-width: 213px;
+    }
+  }
+}

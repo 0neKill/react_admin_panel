@@ -1,0 +1,15 @@
+@import '../utils/variables';
+
+.appointment {
+  padding: 20px 0;
+
+  &__title {
+    display: block;
+    text-align: center;
+    font-family: $font-family-Roboto;
+    font-weight: $bold;
+    color: #0A3E64;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}

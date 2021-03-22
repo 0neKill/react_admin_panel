@@ -1,0 +1,32 @@
+@import './variables';
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  cursor: default;
+}
+
+body {
+  font-family: $font-family-Standard;
+  font-weight: $regular;
+  font-size: $font-size-general;
+  color: $color_write;
+}
+
+.container {
+  max-width: 76.78%;
+  width: 100%;
+  margin: 30px auto;
+
+  &.small {
+    max-width: 56.81%;
+    width: 100%;
+  }
+}
